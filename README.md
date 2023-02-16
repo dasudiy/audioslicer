@@ -8,7 +8,7 @@ This is a simple command-line tool that can be used to split a video file into m
 
 ## Usage
 ```shell
-dotnet VideoToSpeechConverter.dll input-video.mp4 subtitle-file.srt output-directory/
+dotnet AudioSlicer.dll input-video.mp4 subtitle-file.srt output-directory/
 ```
 - `input-video.mp4`: The path to the input video file.
 - `subtitle-file.srt`: The path to the SRT subtitle file.
@@ -25,7 +25,7 @@ This tool generates two types of output:
 Suppose you have an input video `my-video.mp4` and an SRT subtitle file `my-subtitle.srt`. You want to split the input video into audio files and generate a list file in the `output/` directory. Run the following command:
 
 ```shell
-dotnet VideoToSpeechConverter.dll my-video.mp4 my-subtitle.srt output/
+dotnet AudioSlicer.dll my-video.mp4 my-subtitle.srt output/
 ```
 
 The tool will generate multiple audio files in the output/ directory, such as audio-10.3.wav, audio-12.5.wav, audio-14.2.wav, etc. It will also generate a list file list.txt in the output/ directory, which will contain the text of the subtitle along with the corresponding audio file names.
